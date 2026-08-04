@@ -1,4 +1,5 @@
 - [首页](README)
+- [GML 绑定教程](gml-tutorial)
 - 模块文档
   - [fixflash](fixflash)
   - [keeplive](keeplive)
