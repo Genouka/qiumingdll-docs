@@ -59,4 +59,5 @@ if (choice == 5 || choice == 2)
 ## 相关函数
 
 - [qiumingdll_init](qiumingdll_init.md)
+- [qiumingdll_show_error_ex](qiumingdll_show_error_ex.md)
 - [qiumingdll_fixflash](qiumingdll_fixflash.md)

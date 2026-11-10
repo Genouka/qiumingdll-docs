@@ -6,9 +6,10 @@ qiumingdll 扩展（Windows 专用 GameMaker 扩展）的完整函数参考文�
 
 | 模块 | 目录 | 文档数 | 说明 |
 |------|------|--------|------|
-| 核心 | [system](system/) | 15 | `qiumingdll_init` / `free` / 版本 / 系统菜单 / 程序执行等 |
+| 核心 | [system](system/) | 16 | `qiumingdll_init` / `free` / 版本 / 系统菜单 / 程序执行 / 自定义错误窗口等 |
 | 进程检测 | [procdetect](procdetect/) | 10 | 检测 Cheat Engine、直播软件、多开、任意进程；统计同名数量、读取命令行、系统 CPU/内存/GPU 占用；默认异步后台检测，可切换同步模式 |
 | 光标 | [cursor](cursor/) | 2 | 全局光标反向（光标与鼠标移动相反），8 次 F12 安全阀，退出自动还原 |
+| 窗口特效 | [wineffect](wineffect/) | 9 | 窗口级颤动 / 轮廓扭曲 / 撕裂；作用于真实窗口位置和窗口区域，不做内容截屏 |
 | 桌面环境 | [desktop](desktop/) | 4 | 当前登录用户名、桌面壁纸备份/还原/设置 |
 | 联机 | [net](net/) | 15 | TCP 一主多从联机：共享变量 / 共享实例 / 自定义事件 / 玩家名单 / 掉线通知 |
 | 游戏窗口 | [winself](winself/) | 8 | 游戏主窗口自身的透明度与不规则形状 |
@@ -20,7 +21,7 @@ qiumingdll 扩展（Windows 专用 GameMaker 扩展）的完整函数参考文�
 | 音高检测 | [pitch](pitch/) | 8 | 麦克风输入的音高 / 音符检测 |
 | 保活 | [keeplive](keeplive/) | 3 | 防止系统进入休眠 / 屏幕关闭 |
 
-共 200 篇函数文档（覆盖 `gml/` 目录下全部 194 个 GML 包装函数，其中 webview/set_region 等多态函数拆分多篇）。
+共 210 篇函数文档（覆盖 `gml/` 目录下全部 204 个 GML 包装函数，其中 webview/set_region 等多态函数拆分多篇）。
 
 
 ## 文档格式

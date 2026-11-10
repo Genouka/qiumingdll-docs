@@ -2,7 +2,7 @@
 
 核心函数：初始化与释放（调用任何其他函数前必须先调用 qiumingdll_init）、版本查询、Flash 控件修复、系统菜单控制、错误提示框与外部程序执行。
 
-共 9 个函数。
+共 10 个函数。
 
 ## 函数索引
 
@@ -17,5 +17,6 @@
 | [qiumingdll_init](qiumingdll_init.md) | 初始化 qiumingdll 扩展：在 Windows 平台加载 DLL 并绑定全部外部函数，是所有其他 qiumingdll 函数可用的前提。 |
 | [qiumingdll_restore_system_menu](qiumingdll_restore_system_menu.md) | 恢复游戏窗口的系统菜单及窗口操作，撤销之前 `qiumingdll_disable_system_menu()` 的拦截效果。 |
 | [qiumingdll_show_error](qiumingdll_show_error.md) | 弹出带调用栈的阻塞式错误对话框（样式类似 GameMaker 崩溃报告），用于向用户展示错误信息。 |
+| [qiumingdll_show_error_ex](qiumingdll_show_error_ex.md) | 弹出完全可自定义的阻塞式错误对话框：自定义标题、正文、按钮文本、按钮行为与按钮颜色。 |
 
 [返回文档首页](../README.md)
