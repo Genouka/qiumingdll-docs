@@ -2,7 +2,7 @@
 
 多窗口分屏显示：将一个窗口的内容同时呈现在多个屏幕上，支持形状裁剪、源区域缩放、批量动画控制。
 
-共 61 个函数。
+共 63 个函数。
 
 ## 函数索引
 
@@ -69,5 +69,7 @@
 | [qiumingdll_winsplit_show](qiumingdll_winsplit_show.md) | 显示指定的分裂窗口（若之前被隐藏），不激活它、不抢焦点。 |
 | [qiumingdll_winsplit_show_original](qiumingdll_winsplit_show_original.md) | 恢复显示被隐藏的原游戏窗口，恢复位置与隐藏前一致；与 hide_original 成对使用。 |
 | [qiumingdll_winsplit_stop_animation](qiumingdll_winsplit_stop_animation.md) | 中途停止指定分裂窗口正在播放的普通动画（位置/尺寸/区域/路径动画），窗口停留在被停止时的位置。 |
+| [qiumingdll_winsplit_set_transparent_color](qiumingdll_winsplit_set_transparent_color.md) | 设置指定分裂窗口的透明色键（color key）：等于该颜色的像素变透明（成洞），与整体透明度可叠加。 |
+| [qiumingdll_winsplit_enable_transparent_color](qiumingdll_winsplit_enable_transparent_color.md) | 开启或关闭指定分裂窗口的透明色键功能（不改变已设定的色键值）。 |
 
 [返回文档首页](../README.md)

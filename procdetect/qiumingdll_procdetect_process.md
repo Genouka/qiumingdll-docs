@@ -27,6 +27,7 @@ qiumingdll_procdetect_process(name)
 - 平台限制：仅 Windows。
 - 行为细节：比 `procdetect_cheatengine` / `procdetect_streaming` 更通用，可检测任意自定义进程名，用于与修改器、辅助工具等联动判断。
 - 注意：传入空字符串时通常不会匹配任何进程；进程名匹配为完全匹配（不含模糊前缀/后缀）。
+- 异步模式：默认从后台缓存读取，进程刚启动/刚退出时最长约 0.5 秒后才反映到结果；可安全放入 Step 事件每帧调用，不会卡顿。
 
 ## 示例
 
