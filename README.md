@@ -12,7 +12,6 @@ qiumingdll 扩展（Windows 专用 GameMaker 扩展）的完整函数参考文�
 | 桌面环境 | [desktop](desktop/) | 4 | 当前登录用户名、桌面壁纸备份/还原/设置 |
 | 联机 | [net](net/) | 15 | TCP 一主多从联机：共享变量 / 共享实例 / 自定义事件 / 玩家名单 / 掉线通知 |
 | 游戏窗口 | [winself](winself/) | 8 | 游戏主窗口自身的透明度与不规则形状 |
-
 | JSON5 | [json5](json5/) | 2 | JSON5 格式的编码 / 解码 |
 | 窗口分屏 | [winsplit](winsplit/) | 61 | 多窗口分屏显示、形状裁剪、批量动画 |
 | WebView | [webview](webview/) | 37 | 内置浏览器窗口（独立 / 子窗口） |
