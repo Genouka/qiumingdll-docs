@@ -2,7 +2,7 @@
 
 多窗口分屏显示：将一个窗口的内容同时呈现在多个屏幕上，支持形状裁剪、源区域缩放、批量动画控制。
 
-共 63 个函数。
+共 65 个函数。
 
 ## 函数索引
 
@@ -27,6 +27,7 @@
 | [qiumingdll_winsplit_batch_stop](qiumingdll_winsplit_batch_stop.md) | 中途停止指定分裂窗口正在播放的批处理动画，窗口停留在被停止时的状态。 |
 | [qiumingdll_winsplit_begin_shape](qiumingdll_winsplit_begin_shape.md) | 开始为指定的分裂窗口录制自定义多边形形状：清空该窗口的形状点缓冲，后续用 add_shape_point 依次添点、用 end_shape 生成形状。 |
 | [qiumingdll_winsplit_cleanup](qiumingdll_winsplit_cleanup.md) | 整体清理窗口分裂模块：销毁所有分裂窗口、恢复原游戏窗口显示、卸载捕获与消息钩子。用于游戏退出或彻底停用分裂功能。 |
+| [qiumingdll_winsplit_clear_auto_resize](qiumingdll_winsplit_clear_auto_resize.md) | 取消分屏窗口的 9-Patch 自动跟随，保持当前几何状态。 |
 | [qiumingdll_winsplit_clear_path](qiumingdll_winsplit_clear_path.md) | 停止指定分裂窗口正在播放的动画，并清空其所有已添加的路径点。 |
 | [qiumingdll_winsplit_clear_shape](qiumingdll_winsplit_clear_shape.md) | 清除指定分裂窗口的形状区域，恢复为完整矩形（显示整个客户区画面）。 |
 | [qiumingdll_winsplit_create](qiumingdll_winsplit_create.md) | 创建一个分裂窗口：把原游戏窗口客户区内指定的一块像素区域（源区域）实时显示在一个新的顶层窗口中，并返回该分裂窗口的 ID。 |
@@ -43,6 +44,7 @@
 | [qiumingdll_winsplit_move_path](qiumingdll_winsplit_move_path.md) | 不带动画，将指定分裂窗口立即移动到当前路径的最后一个路径点，并清空路径点列表。 |
 | [qiumingdll_winsplit_move_path_animate](qiumingdll_winsplit_move_path_animate.md) | 让指定分裂窗口沿已录制的路径逐段平滑移动，动画结束后停留在路径的最后一个点。 |
 | [qiumingdll_winsplit_set_capture_mode](qiumingdll_winsplit_set_capture_mode.md) | 设置分裂窗口的捕获方式。**已弃用**：新方案总是从 GPU 直接读取 backbuffer，调用本函数不会产生任何效果（返回值固定为 1）。 |
+| [qiumingdll_winsplit_set_auto_resize_9patch](qiumingdll_winsplit_set_auto_resize_9patch.md) | 按 9-Patch 网格 + 矩形对角线两坐标启用自动跟随；支持窗口缩放（mode=0）与内容缩放（mode=1）两种方式。 |
 | [qiumingdll_winsplit_set_closable](qiumingdll_winsplit_set_closable.md) | 设置指定分裂窗口是否允许被用户关闭（通过标题栏的 X 按钮或系统菜单的"关闭"）。 |
 | [qiumingdll_winsplit_set_close_triggers_main](qiumingdll_winsplit_set_close_triggers_main.md) | 设置当用户关闭该分裂窗口时，是否连带关闭原游戏主窗口（联动关闭）。 |
 | [qiumingdll_winsplit_set_draggable](qiumingdll_winsplit_set_draggable.md) | 设置指定分裂窗口是否允许被鼠标拖动移动位置。开启后用户可直接用鼠标拖动窗口。 |

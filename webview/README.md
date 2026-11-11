@@ -2,13 +2,15 @@
 
 基于 WebView2 的内置浏览器窗口：支持独立窗口与子窗口、导航、脚本执行、形状/透明度/置顶等外观控制。
 
-共 37 个函数。
+共 41 个函数。
 
 ## 函数索引
 
 | 函数 | 说明 |
 |------|------|
 | [qiumingdll_webview_cleanup](qiumingdll_webview_cleanup.md) | 销毁所有 WebView 窗口并**释放整个 WebView 环境**（包括 WebView2 Environment、加载的 DLL、COM 等全部底层资源）。 |
+| [qiumingdll_webview_clear_resize_to_parent](qiumingdll_webview_clear_resize_to_parent.md) | 取消 `resize_to_parent` 的自动铺满效果，保持当前尺寸，后续主窗口缩放不再跟随。 |
+| [qiumingdll_webview_clear_auto_resize_9patch](qiumingdll_webview_clear_auto_resize_9patch.md) | 取消 9-Patch 自动跟随，保持当前几何状态，后续主窗口缩放不再跟随。 |
 | [qiumingdll_webview_create](qiumingdll_webview_create.md) | 创建一个独立的浏览器窗口（带系统标题栏，可移动、可关闭），返回该窗口的 webviewId。 |
 | [qiumingdll_webview_create_child](qiumingdll_webview_create_child.md) | 在游戏主窗口的客户区内创建一个嵌入式的子窗口浏览器（无标题栏），返回该 WebView 的编号。 |
 | [qiumingdll_webview_destroy](qiumingdll_webview_destroy.md) | 销毁指定的 WebView 窗口并释放其内部资源，该编号随即被释放可复用。 |
@@ -28,7 +30,9 @@
 | [qiumingdll_webview_navigate_to_string](qiumingdll_webview_navigate_to_string.md) | 用一段 HTML 字符串直接在指定 WebView 中渲染页面（类似 `data:text/html` 的效果），无需网络和本地文件。 |
 | [qiumingdll_webview_reload](qiumingdll_webview_reload.md) | 重新加载指定 WebView 当前页面（相当于浏览器的刷新）。 |
 | [qiumingdll_webview_resize_to_parent](qiumingdll_webview_resize_to_parent.md) | 让指定的**子窗口**浏览器自动铺满游戏主窗口的整个客户区，并在主窗口尺寸变化时自动跟随。 |
+| [qiumingdll_webview_resize](qiumingdll_webview_resize.md) | 取消所有自动跟随并一次性缩放到自定义矩形（位置 + 大小）。 |
 | [qiumingdll_webview_set_closable](qiumingdll_webview_set_closable.md) | 控制指定的 WebView 独立窗口是否允许被用户关闭（通过标题栏关闭按钮 / Alt+F4）。 |
+| [qiumingdll_webview_set_auto_resize_9patch](qiumingdll_webview_set_auto_resize_9patch.md) | 按 9-Patch 网格 + 矩形对角线两坐标，让子窗口自动跟随主窗口缩放。 |
 | [qiumingdll_webview_set_close_triggers_main](qiumingdll_webview_set_close_triggers_main.md) | 设置当用户关闭该 WebView 独立窗口时，是否连带关闭游戏主窗口。 |
 | [qiumingdll_webview_set_default_context_menus_enabled](qiumingdll_webview_set_default_context_menus_enabled.md) | 开启或关闭指定 WebView 页面的默认右键菜单。 |
 | [qiumingdll_webview_set_devtools_enabled](qiumingdll_webview_set_devtools_enabled.md) | 开启或关闭指定 WebView 的开发者工具（F12 DevTools）支持。 |

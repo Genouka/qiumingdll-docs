@@ -14,14 +14,14 @@ qiumingdll 扩展（Windows 专用 GameMaker 扩展）的完整函数参考文�
 | 联机 | [net](net/) | 15 | TCP 一主多从联机：共享变量 / 共享实例 / 自定义事件 / 玩家名单 / 掉线通知 |
 | 游戏窗口 | [winself](winself/) | 8 | 游戏主窗口自身的透明度与不规则形状 |
 | JSON5 | [json5](json5/) | 2 | JSON5 格式的编码 / 解码 |
-| 窗口分屏 | [winsplit](winsplit/) | 61 | 多窗口分屏显示、形状裁剪、批量动画 |
-| WebView | [webview](webview/) | 37 | 内置浏览器窗口（独立 / 子窗口） |
+| 窗口分屏 | [winsplit](winsplit/) | 65 | 多窗口分屏显示、形状裁剪、批量动画、9-Patch 自动跟随 |
+| WebView | [webview](webview/) | 41 | 内置浏览器窗口（独立 / 子窗口）、9-Patch 自动跟随 |
 | 输入法 | [ime](ime/) | 23 | 输入法候选、拼音、内嵌编辑、轮询 |
 | 麦克风音量 | [volume](volume/) | 10 | 音量峰值 / RMS / dB 检测与阈值 |
 | 音高检测 | [pitch](pitch/) | 8 | 麦克风输入的音高 / 音符检测 |
 | 保活 | [keeplive](keeplive/) | 3 | 防止系统进入休眠 / 屏幕关闭 |
 
-共 210 篇函数文档（覆盖 `gml/` 目录下全部 204 个 GML 包装函数，其中 webview/set_region 等多态函数拆分多篇）。
+共 216 篇函数文档（覆盖 `gml/` 目录下全部 210 个 GML 包装函数，其中 webview/set_region 等多态函数拆分多篇）。
 
 
 ## 文档格式
