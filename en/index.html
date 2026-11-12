@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+
+  <title>QiumingDLL API Documentation (English)</title>
+  <meta name="description"
+    content="English API documentation for QiumingDLL, a Windows extension library for GameMaker. The Chinese documentation is authoritative.">
+
+  <!-- Core Theme (see https://docsify.js.org/#/themes) -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css">
+
+  <style>
+    .qm-lang-switch {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 40;
+      padding: 0.55em 0.9em;
+      font-size: 14px;
+      line-height: 1;
+      color: var(--theme-color, #42b983);
+      background: var(--base-background-color, #fff);
+      border: 1px solid var(--border-color, #e5e5e5);
+      border-top: 0;
+      border-right: 0;
+      border-bottom-left-radius: 6px;
+      text-decoration: none;
+      opacity: 0.9;
+    }
+
+    .qm-lang-switch:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .qm-en-notice {
+      margin: 0 0 1.6em;
+      padding: 0.75em 1em;
+      font-size: 0.92em;
+      line-height: 1.55;
+      color: var(--text-color, #34495e);
+      border: 1px solid var(--border-color, #e5e5e5);
+      border-left: 3px solid var(--theme-color, #42b983);
+      border-radius: 4px;
+      background: var(--code-background, #f8f8f8);
+    }
+
+    .qm-en-notice__lang {
+      font-weight: 700;
+    }
+
+    .qm-en-notice__stale {
+      margin-top: 0.55em;
+      padding-top: 0.55em;
+      color: #8a4b00;
+      border-top: 1px dashed #d9a441;
+    }
+
+    .qm-en-notice--stale {
+      border-left-color: #d9a441;
+      background: #fff8e6;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <a class="qm-lang-switch" id="qm-lang-switch" href="../" data-native-link>中文（权威版本）</a>
+
+  <script>
+    // Keep docsify from turning the language switch into an in-app route.
+    document.addEventListener('click', function (event) {
+      var link = event.target && event.target.closest ? event.target.closest('a[data-native-link]') : null;
+      if (link) {
+        event.stopPropagation();
+      }
+    }, true);
+  </script>
+
+  <script>
+    (function () {
+      'use strict';
+
+      var manifestPromise = null;
+      var hashCache = new Map();
+      var renderToken = 0;
+
+      function fnv1a64(text) {
+        var bytes = new TextEncoder().encode(String(text).replace(/^\uFEFF/, '').replace(/\r\n?/g, '\n'));
+        var hash = 0xcbf29ce484222325n;
+        var prime = 0x100000001b3n;
+        var mask = 0xffffffffffffffffn;
+        for (var i = 0; i < bytes.length; i += 1) {
+          hash = ((hash ^ BigInt(bytes[i])) * prime) & mask;
+        }
+        return hash.toString(16).padStart(16, '0');
+      }
+
+      function freshUrl(file) {
+        var base = document.baseURI.split('#')[0];
+        return new URL(file, base).href + (file.indexOf('?') === -1 ? '?' : '&') + 'qm_sync=' + Date.now();
+      }
+
+      function loadManifest() {
+        if (!manifestPromise) {
+          manifestPromise = fetch(freshUrl('_sync.json'), { cache: 'no-store' })
+            .then(function (response) {
+              return response.ok ? response.json() : null;
+            })
+            .catch(function () {
+              return null;
+            });
+        }
+        return manifestPromise;
+      }
+
+      function zhPageUrl(file) {
+        var path = String(file).split('/').map(encodeURIComponent).join('/');
+        return new URL('../' + path, document.baseURI.split('#')[0]).href;
+      }
+
+      function loadChinesePage(file) {
+        if (!hashCache.has(file)) {
+          hashCache.set(file, fetch(freshUrl('../' + file.split('/').map(encodeURIComponent).join('/')), { cache: 'no-store' })
+            .then(function (response) {
+              return response.ok ? response.text() : null;
+            })
+            .catch(function () {
+              return null;
+            }));
+        }
+        return hashCache.get(file);
+      }
+
+      function escapeHtml(value) {
+        return String(value).replace(/[&<>"']/g, function (ch) {
+          return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch];
+        });
+      }
+
+      function routeFile(vm) {
+        var file = (vm.route && vm.route.file) || 'README.md';
+        return file.replace(/^\.\//, '');
+      }
+
+      function ensureNotice() {
+        var section = document.querySelector('.markdown-section');
+        if (!section) {
+          return null;
+        }
+        var previous = document.getElementById('qm-en-notice');
+        if (previous) {
+          previous.remove();
+        }
+        var notice = document.createElement('div');
+        notice.id = 'qm-en-notice';
+        notice.className = 'qm-en-notice';
+        section.insertBefore(notice, section.firstChild);
+        return notice;
+      }
+
+      function renderNotice(vm) {
+        var notice = ensureNotice();
+        if (!notice) {
+          return;
+        }
+        var file = routeFile(vm);
+        var zhUrl = zhPageUrl(file);
+        var token = ++renderToken;
+
+        notice.innerHTML =
+          '<span class="qm-en-notice__lang">English translation.</span> ' +
+          'The Chinese documentation is authoritative (以中文版本为准). ' +
+          '<a data-native-link href="' + zhUrl + '">中文原文</a>';
+
+        loadManifest().then(function (manifest) {
+          if (token !== renderToken) {
+            return;
+          }
+          var entry = manifest && manifest.files && manifest.files[file];
+          if (!entry) {
+            return;
+          }
+          return loadChinesePage(file).then(function (source) {
+            if (token !== renderToken || source === null) {
+              return;
+            }
+            if (fnv1a64(source) === entry.hash) {
+              return;
+            }
+            var currentNode = document.getElementById('qm-en-notice');
+            if (currentNode !== notice) {
+              return;
+            }
+            notice.classList.add('qm-en-notice--stale');
+            var warning = document.createElement('div');
+            warning.className = 'qm-en-notice__stale';
+            warning.innerHTML =
+              '⚠ <strong>This page may be outdated.</strong> ' +
+              'The Chinese source changed after this translation ' +
+              '(last synced ' + escapeHtml(entry.synced || 'unknown') + '). ' +
+              'Use the Chinese version for the current behavior.';
+            notice.appendChild(warning);
+          });
+        }).catch(function () {
+          /* the static notice stays visible */
+        });
+      }
+
+      window.$docsify = {
+        name: 'QiumingDLL Documentation',
+        relativePath: true,
+        notFoundPage: true,
+        auto2top: true,
+        loadSidebar: true,
+        maxLevel: 0,
+        subMaxLevel: 0,
+        search: {
+          placeholder: 'Search...',
+          noData: 'No results',
+          depth: 6,
+          paths: 'auto',
+        },
+        plugins: [
+          function (hook, vm) {
+            hook.doneEach(function () {
+              renderNotice(vm);
+            });
+          },
+        ],
+      };
+    })();
+  </script>
+
+  <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/plugins/search.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined' && window.top === window.self) {
+      // Reuse the site-wide cache. The script lives one level above /en/.
+      navigator.serviceWorker.register('../sw.js').catch(function () { });
+    }
+  </script>
+  <script defer src="https://status.genouka.top/script.js" data-website-id="eb48a243-9c7f-4be4-b677-958cea541922"></script>
+</body>
+
+</html>

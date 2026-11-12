@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
   <meta charset="utf-8">
@@ -12,11 +12,47 @@
   <!-- Core Theme (see https://docsify.js.org/#/themes) -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css">
 
+  <!-- Language switch -->
+  <style>
+    .qm-lang-switch {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 40;
+      padding: 0.55em 0.9em;
+      font-size: 14px;
+      line-height: 1;
+      color: var(--theme-color, #42b983);
+      background: var(--base-background-color, #fff);
+      border: 1px solid var(--border-color, #e5e5e5);
+      border-top: 0;
+      border-right: 0;
+      border-bottom-left-radius: 6px;
+      text-decoration: none;
+      opacity: 0.9;
+    }
+
+    .qm-lang-switch:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+  </style>
+
 </head>
 
 <body>
   <div id="app"></div>
+  <a class="qm-lang-switch" href="en/" data-native-link>English</a>
 
+  <script>
+    // Keep docsify from turning the language switch into an in-app route.
+    document.addEventListener('click', function (event) {
+      var link = event.target && event.target.closest ? event.target.closest('a[data-native-link]') : null;
+      if (link) {
+        event.stopPropagation();
+      }
+    }, true);
+  </script>
   <script>
     // Docsify Configuration (see https://docsify.js.org/#/configuration)
     window.$docsify = {

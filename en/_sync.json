@@ -1,0 +1,938 @@
+{
+  "algorithm": "fnv1a64",
+  "files": {
+    "README.md": {
+      "hash": "a7ad17daa16f0cc2",
+      "synced": "2026-11-12"
+    },
+    "_404.md": {
+      "hash": "55d03ac984bd5eec",
+      "synced": "2026-11-12"
+    },
+    "cursor/README.md": {
+      "hash": "facbbbd6a56386c4",
+      "synced": "2026-11-12"
+    },
+    "cursor/qiumingdll_cursor_get_invert.md": {
+      "hash": "cd42794742e19637",
+      "synced": "2026-11-12"
+    },
+    "cursor/qiumingdll_cursor_set_invert.md": {
+      "hash": "116fe082f79ef129",
+      "synced": "2026-11-12"
+    },
+    "desktop/README.md": {
+      "hash": "a863f915e2eaf5bc",
+      "synced": "2026-11-12"
+    },
+    "desktop/qiumingdll_desktop_backup_wallpaper.md": {
+      "hash": "ab72e97300d81b43",
+      "synced": "2026-11-12"
+    },
+    "desktop/qiumingdll_desktop_get_username.md": {
+      "hash": "9b63a81b8cad69c1",
+      "synced": "2026-11-12"
+    },
+    "desktop/qiumingdll_desktop_restore_wallpaper.md": {
+      "hash": "e64419b4a4fde9a4",
+      "synced": "2026-11-12"
+    },
+    "desktop/qiumingdll_desktop_set_wallpaper.md": {
+      "hash": "3737e858e95c13b3",
+      "synced": "2026-11-12"
+    },
+    "doc-template.md": {
+      "hash": "2a7a2bd5e28b3c38",
+      "synced": "2026-11-12"
+    },
+    "ime/README.md": {
+      "hash": "65b318e91dc0b697",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_fix_conflict.md": {
+      "hash": "1f649b20609df072",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_get_candidate.md": {
+      "hash": "0a720017c4cd8c10",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_get_candidate_count.md": {
+      "hash": "38d6db5149e896a0",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_get_candidate_selection.md": {
+      "hash": "e189ddb60eca426a",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_get_commit.md": {
+      "hash": "3fac5a42cf8d45ca",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_get_commit_text.md": {
+      "hash": "58be95f8819422e8",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_get_composition_cursor.md": {
+      "hash": "2b97d42abb21abc2",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_get_composition_text.md": {
+      "hash": "4d881a497abf8c50",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_get_mode.md": {
+      "hash": "373e7af159bf37a4",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_get_state.md": {
+      "hash": "988ef8a8f3ebd947",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_input_cleanup.md": {
+      "hash": "5095d951f8b35e42",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_input_create.md": {
+      "hash": "ef8bd64b7819df04",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_input_draw.md": {
+      "hash": "014209ae6fc5b06e",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_input_draw_candidates.md": {
+      "hash": "899b1e590ea70f4c",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_input_draw_text.md": {
+      "hash": "04af18d9f9b5f130",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_input_step.md": {
+      "hash": "4a0caf3adb8ac5b8",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_is_composing.md": {
+      "hash": "e93e6638221d2a18",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_poll.md": {
+      "hash": "05218adca556fa9f",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_poll_destroy.md": {
+      "hash": "56e422e5a2990ba8",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_poll_json.md": {
+      "hash": "f715ae693f8e0979",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_reset_inline.md": {
+      "hash": "399696f42da2fc12",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_set_inline_position.md": {
+      "hash": "a9a144554d55f495",
+      "synced": "2026-11-12"
+    },
+    "ime/qiumingdll_ime_switch.md": {
+      "hash": "b577de14011e2538",
+      "synced": "2026-11-12"
+    },
+    "json5/README.md": {
+      "hash": "2e172212aedb2167",
+      "synced": "2026-11-12"
+    },
+    "json5/qiumingdll_json5_decode.md": {
+      "hash": "de79acee19e3e7c0",
+      "synced": "2026-11-12"
+    },
+    "json5/qiumingdll_json5_encode.md": {
+      "hash": "05dd3ba121dfa55f",
+      "synced": "2026-11-12"
+    },
+    "keeplive/README.md": {
+      "hash": "1963a298f360dee6",
+      "synced": "2026-11-12"
+    },
+    "keeplive/qiumingdll_keeplive_cleanup.md": {
+      "hash": "3b98828dc9bb2a35",
+      "synced": "2026-11-12"
+    },
+    "keeplive/qiumingdll_keeplive_init.md": {
+      "hash": "87b7b62c73b47a4a",
+      "synced": "2026-11-12"
+    },
+    "keeplive/qiumingdll_keeplive_is_active.md": {
+      "hash": "78a81a7854a91926",
+      "synced": "2026-11-12"
+    },
+    "net/README.md": {
+      "hash": "bfc48940b718845a",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_client_connect.md": {
+      "hash": "15f34eb62b1c55e8",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_disconnect.md": {
+      "hash": "e24f326e0a23b2f5",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_fire_event.md": {
+      "hash": "bb0d60035e042f96",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_get_player_count.md": {
+      "hash": "5f419fea2ec5d09a",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_get_player_id.md": {
+      "hash": "41a36abd65ef5040",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_get_players_json.md": {
+      "hash": "a5c762977711e474",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_get_shared_vars_json.md": {
+      "hash": "c4f2e90976c49a26",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_get_status.md": {
+      "hash": "16d9f2063c19e9f7",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_host_start.md": {
+      "hash": "cf5af817ceed4b81",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_instance_create.md": {
+      "hash": "81ef7312cb91ec12",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_instance_destroy.md": {
+      "hash": "208a94065535575d",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_instance_update.md": {
+      "hash": "8dc8ac1937981a63",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_poll_json.md": {
+      "hash": "e4b5f871138eceec",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_register_shared_var.md": {
+      "hash": "60278c2520cd4a51",
+      "synced": "2026-11-12"
+    },
+    "net/qiumingdll_net_set_shared_var.md": {
+      "hash": "083e8df5cf492c6b",
+      "synced": "2026-11-12"
+    },
+    "pitch/README.md": {
+      "hash": "e40ad9f43abec867",
+      "synced": "2026-11-12"
+    },
+    "pitch/qiumingdll_pitch_cleanup.md": {
+      "hash": "e90448b16fd146f7",
+      "synced": "2026-11-12"
+    },
+    "pitch/qiumingdll_pitch_get_frequency.md": {
+      "hash": "55e75a8d84c81e89",
+      "synced": "2026-11-12"
+    },
+    "pitch/qiumingdll_pitch_get_note.md": {
+      "hash": "f054fba3ebe01727",
+      "synced": "2026-11-12"
+    },
+    "pitch/qiumingdll_pitch_get_volume.md": {
+      "hash": "706763cf882a6a92",
+      "synced": "2026-11-12"
+    },
+    "pitch/qiumingdll_pitch_is_active.md": {
+      "hash": "8fb95e3534ec7041",
+      "synced": "2026-11-12"
+    },
+    "pitch/qiumingdll_pitch_set_threshold.md": {
+      "hash": "219aa2a5ecbd1308",
+      "synced": "2026-11-12"
+    },
+    "pitch/qiumingdll_pitch_start.md": {
+      "hash": "f0cdb8cad3e42049",
+      "synced": "2026-11-12"
+    },
+    "pitch/qiumingdll_pitch_stop.md": {
+      "hash": "59ec50659bd617e8",
+      "synced": "2026-11-12"
+    },
+    "procdetect/README.md": {
+      "hash": "aa40dbe9c4d54979",
+      "synced": "2026-11-12"
+    },
+    "procdetect/qiumingdll_procdetect_cheatengine.md": {
+      "hash": "d2ef142c5a9560ee",
+      "synced": "2026-11-12"
+    },
+    "procdetect/qiumingdll_procdetect_count_by_name.md": {
+      "hash": "543ccab159e6c0b2",
+      "synced": "2026-11-12"
+    },
+    "procdetect/qiumingdll_procdetect_get_commandline.md": {
+      "hash": "ce43bf3223fb0bed",
+      "synced": "2026-11-12"
+    },
+    "procdetect/qiumingdll_procdetect_multiinstance.md": {
+      "hash": "63a51067cebc739c",
+      "synced": "2026-11-12"
+    },
+    "procdetect/qiumingdll_procdetect_process.md": {
+      "hash": "1f764889b95e2264",
+      "synced": "2026-11-12"
+    },
+    "procdetect/qiumingdll_procdetect_set_sync_mode.md": {
+      "hash": "0b831bf8c5f6cf12",
+      "synced": "2026-11-12"
+    },
+    "procdetect/qiumingdll_procdetect_streaming.md": {
+      "hash": "6f68fbda2205bea2",
+      "synced": "2026-11-12"
+    },
+    "procdetect/qiumingdll_sys_get_cpu_usage.md": {
+      "hash": "d702405f5aa92d0b",
+      "synced": "2026-11-12"
+    },
+    "procdetect/qiumingdll_sys_get_gpu_usage.md": {
+      "hash": "079e21e144bd1617",
+      "synced": "2026-11-12"
+    },
+    "procdetect/qiumingdll_sys_get_memory_info.md": {
+      "hash": "35c53288f7a7e4e5",
+      "synced": "2026-11-12"
+    },
+    "system/README.md": {
+      "hash": "97fcdb02e735e515",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_disable_system_menu.md": {
+      "hash": "0bc040ac98d3aa8c",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_execute_program.md": {
+      "hash": "21604a0f53595a04",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_execute_program_async.md": {
+      "hash": "b0e67c296a98fe71",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_fixflash.md": {
+      "hash": "1e6ad5a1f4aca98d",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_free.md": {
+      "hash": "04d75c512039d63b",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_get_version.md": {
+      "hash": "f4d82a78539fa422",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_init.md": {
+      "hash": "483de91e318c216c",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_json5_decode.md": {
+      "hash": "61e16f9cebf1407a",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_json5_encode.md": {
+      "hash": "6ac2c0b45fa5b98e",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_procdetect_cheatengine.md": {
+      "hash": "c7d7d1bfc514c9a7",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_procdetect_multiinstance.md": {
+      "hash": "3a5b849bacb62101",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_procdetect_process.md": {
+      "hash": "60dd3abbc63c1a81",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_procdetect_streaming.md": {
+      "hash": "d7ff5aeb83dad78e",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_restore_system_menu.md": {
+      "hash": "c7d54d4ce8abeaba",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_show_error.md": {
+      "hash": "9a29677aa3f20c01",
+      "synced": "2026-11-12"
+    },
+    "system/qiumingdll_show_error_ex.md": {
+      "hash": "11a4645b90fcdd67",
+      "synced": "2026-11-12"
+    },
+    "volume/README.md": {
+      "hash": "8652d2c980513c51",
+      "synced": "2026-11-12"
+    },
+    "volume/qiumingdll_volume_cleanup.md": {
+      "hash": "2191f4132ef950c1",
+      "synced": "2026-11-12"
+    },
+    "volume/qiumingdll_volume_get_db.md": {
+      "hash": "157b7dc82fdc93f7",
+      "synced": "2026-11-12"
+    },
+    "volume/qiumingdll_volume_get_level.md": {
+      "hash": "67521ec7321d3792",
+      "synced": "2026-11-12"
+    },
+    "volume/qiumingdll_volume_get_peak.md": {
+      "hash": "051adef48da375c8",
+      "synced": "2026-11-12"
+    },
+    "volume/qiumingdll_volume_get_rms.md": {
+      "hash": "9b4478476bef0692",
+      "synced": "2026-11-12"
+    },
+    "volume/qiumingdll_volume_is_active.md": {
+      "hash": "8dee3570f185b154",
+      "synced": "2026-11-12"
+    },
+    "volume/qiumingdll_volume_set_silence_threshold.md": {
+      "hash": "0d7fc0f6a5a502af",
+      "synced": "2026-11-12"
+    },
+    "volume/qiumingdll_volume_set_smoothing.md": {
+      "hash": "165dbbc6f6b519d9",
+      "synced": "2026-11-12"
+    },
+    "volume/qiumingdll_volume_start.md": {
+      "hash": "7f5c0d736303196f",
+      "synced": "2026-11-12"
+    },
+    "volume/qiumingdll_volume_stop.md": {
+      "hash": "34faf4e6283a807c",
+      "synced": "2026-11-12"
+    },
+    "webview/README.md": {
+      "hash": "b4d7bc535beb166e",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_cleanup.md": {
+      "hash": "a7110e92ca1bc265",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_clear_auto_resize_9patch.md": {
+      "hash": "31557632ab3da8b0",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_clear_resize_to_parent.md": {
+      "hash": "88da98498b3f9071",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_create.md": {
+      "hash": "e97684cd436ac13a",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_create_child.md": {
+      "hash": "817561c439814764",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_destroy.md": {
+      "hash": "d73fcedcdcb07a31",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_destroy_all.md": {
+      "hash": "acd4343d3c900621",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_end_shape.md": {
+      "hash": "c81f1a687144ecdd",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_execute_script.md": {
+      "hash": "b4812324d87684cd",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_exists.md": {
+      "hash": "b516dd6feff5e1f3",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_get_count.md": {
+      "hash": "134ca65090963258",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_get_info.md": {
+      "hash": "b8489b8890f8e3a6",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_get_is_active.md": {
+      "hash": "89b62dc4f0ae468e",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_go_back.md": {
+      "hash": "4f657b72702281c8",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_go_forward.md": {
+      "hash": "6d183b4e097aa38d",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_hide.md": {
+      "hash": "cec6ae3a70f7f1bb",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_init.md": {
+      "hash": "2f95296c2223d0c8",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_is_child.md": {
+      "hash": "22a70824711819a0",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_navigate.md": {
+      "hash": "9fbb206662a7e362",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_navigate_to_string.md": {
+      "hash": "33a4f6500042f608",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_reload.md": {
+      "hash": "ff70d8dd151c23e1",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_resize.md": {
+      "hash": "abd7dddda1a3b4aa",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_resize_to_parent.md": {
+      "hash": "35be6d37ecba7d78",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_auto_resize_9patch.md": {
+      "hash": "dd9569960f78a39f",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_closable.md": {
+      "hash": "add8593795b921ab",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_close_triggers_main.md": {
+      "hash": "7d78afda6530891d",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_default_context_menus_enabled.md": {
+      "hash": "ab2c23c81bf465c2",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_devtools_enabled.md": {
+      "hash": "543ca517a042445f",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_draggable.md": {
+      "hash": "88253bc396276c32",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_opacity.md": {
+      "hash": "0ec4cc96c2f0ded1",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_position.md": {
+      "hash": "d09cd10d8e55d3e9",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_region.md": {
+      "hash": "a0dffe123462e3b6",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_script_enabled.md": {
+      "hash": "792021b6fb731a8a",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_size.md": {
+      "hash": "7f01f8b2bd6cf11b",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_statusbar_enabled.md": {
+      "hash": "bec0968acd0966a7",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_title.md": {
+      "hash": "1027e7fed74feaa3",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_titlebar.md": {
+      "hash": "8c0167159998d339",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_topmost.md": {
+      "hash": "55b70ff233522e64",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_set_zoom_factor.md": {
+      "hash": "ef0622d2ebc450bb",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_show.md": {
+      "hash": "3a44dbbcd8cf1aef",
+      "synced": "2026-11-12"
+    },
+    "webview/qiumingdll_webview_stop.md": {
+      "hash": "cbdf5880f661d940",
+      "synced": "2026-11-12"
+    },
+    "wineffect/README.md": {
+      "hash": "497a55813fac970a",
+      "synced": "2026-11-12"
+    },
+    "wineffect/qiumingdll_wineffect_cleanup.md": {
+      "hash": "4755b0f8f89f72cc",
+      "synced": "2026-11-12"
+    },
+    "wineffect/qiumingdll_wineffect_get_state.md": {
+      "hash": "7c923f8f5648175b",
+      "synced": "2026-11-12"
+    },
+    "wineffect/qiumingdll_wineffect_init.md": {
+      "hash": "2ad8d7850a7cab82",
+      "synced": "2026-11-12"
+    },
+    "wineffect/qiumingdll_wineffect_set_distort.md": {
+      "hash": "8a0dc61e2526e4cb",
+      "synced": "2026-11-12"
+    },
+    "wineffect/qiumingdll_wineffect_set_enabled.md": {
+      "hash": "773d84117d3cfeea",
+      "synced": "2026-11-12"
+    },
+    "wineffect/qiumingdll_wineffect_set_shake.md": {
+      "hash": "e96ae40a40651439",
+      "synced": "2026-11-12"
+    },
+    "wineffect/qiumingdll_wineffect_set_speed.md": {
+      "hash": "b010281df9b5c112",
+      "synced": "2026-11-12"
+    },
+    "wineffect/qiumingdll_wineffect_set_tear.md": {
+      "hash": "1e5ec508126f58de",
+      "synced": "2026-11-12"
+    },
+    "wineffect/qiumingdll_wineffect_stop.md": {
+      "hash": "abc5503c8d5333b2",
+      "synced": "2026-11-12"
+    },
+    "winself/README.md": {
+      "hash": "8605a69c4383589a",
+      "synced": "2026-11-12"
+    },
+    "winself/qiumingdll_winself_add_shape_point.md": {
+      "hash": "e773d21278afec3d",
+      "synced": "2026-11-12"
+    },
+    "winself/qiumingdll_winself_begin_shape.md": {
+      "hash": "50f39d9a454446dc",
+      "synced": "2026-11-12"
+    },
+    "winself/qiumingdll_winself_clear_shape.md": {
+      "hash": "eaf009e47646bb93",
+      "synced": "2026-11-12"
+    },
+    "winself/qiumingdll_winself_end_shape.md": {
+      "hash": "02dddd3d6b79cc92",
+      "synced": "2026-11-12"
+    },
+    "winself/qiumingdll_winself_set_opacity.md": {
+      "hash": "64b45622727aaa91",
+      "synced": "2026-11-12"
+    },
+    "winself/qiumingdll_winself_set_shape_ellipse.md": {
+      "hash": "11e203e8e43545b5",
+      "synced": "2026-11-12"
+    },
+    "winself/qiumingdll_winself_set_shape_from_bitmap.md": {
+      "hash": "3509287ad61283f4",
+      "synced": "2026-11-12"
+    },
+    "winself/qiumingdll_winself_set_shape_roundrect.md": {
+      "hash": "1da86eef35408980",
+      "synced": "2026-11-12"
+    },
+    "winsplit/README.md": {
+      "hash": "4da9347dd1c2b59c",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_add_path_point.md": {
+      "hash": "d81a7764bc0d6498",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_add_shape_point.md": {
+      "hash": "c5bd67807221bffd",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_add_position.md": {
+      "hash": "7d7a382d6d07a23b",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_add_region.md": {
+      "hash": "7989c86d57d87250",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_add_size.md": {
+      "hash": "29cd56b837c54793",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_add_src_region.md": {
+      "hash": "796c55922f5c75ef",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_add_wait.md": {
+      "hash": "50fa4371535fcc72",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_begin.md": {
+      "hash": "220ece0d2ea16473",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_clear.md": {
+      "hash": "ccc9010a01927543",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_end.md": {
+      "hash": "ff1997570e8a55b9",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_is_playing.md": {
+      "hash": "f40c2a3fa2955701",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_play.md": {
+      "hash": "2856dc91e101e08a",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_play_frame_sync.md": {
+      "hash": "98b4cf9769d2f682",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_set_easing.md": {
+      "hash": "3976a8ad4bb1f46d",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_set_src_anim_mode.md": {
+      "hash": "114ca649e44794ed",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_step.md": {
+      "hash": "cf45ec02648c311f",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_batch_stop.md": {
+      "hash": "cc5ad091342fff9f",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_begin_shape.md": {
+      "hash": "8a1c59f6764fd43a",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_cleanup.md": {
+      "hash": "46cf0ef42c91ae64",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_clear_auto_resize.md": {
+      "hash": "3edf3fa51476a346",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_clear_path.md": {
+      "hash": "097f6fc425326885",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_clear_shape.md": {
+      "hash": "eb8aa0997ec0bfbb",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_create.md": {
+      "hash": "fa53f93a4a6cbf9b",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_destroy.md": {
+      "hash": "4acdc45f1fd19458",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_destroy_all.md": {
+      "hash": "2deb0d7e4fa14ab5",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_enable_transparent_color.md": {
+      "hash": "8d71b1017cac5d12",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_end_shape.md": {
+      "hash": "8a2c2fb1bfad6800",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_exists.md": {
+      "hash": "044096eb7a6560cb",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_get_count.md": {
+      "hash": "9813132db55f5097",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_get_info.md": {
+      "hash": "61a054e8df175499",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_hide.md": {
+      "hash": "e38bf3899316de8d",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_hide_original.md": {
+      "hash": "c19104587bf3bdf0",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_init.md": {
+      "hash": "9e4750ff754f94ea",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_is_animating.md": {
+      "hash": "1bcb2786e3739e05",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_move_path.md": {
+      "hash": "117a423f6dbba13f",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_move_path_animate.md": {
+      "hash": "55260f1b160df3fa",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_auto_resize_9patch.md": {
+      "hash": "e5c1042565129744",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_capture_mode.md": {
+      "hash": "2df96b48e4e4e883",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_closable.md": {
+      "hash": "b1e1dafd40e6a168",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_close_triggers_main.md": {
+      "hash": "8a250af8e3bb539c",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_draggable.md": {
+      "hash": "51f47e8e6cda5580",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_dwm_thumbnail_mode.md": {
+      "hash": "cf504fe7509ccae2",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_easing_curve.md": {
+      "hash": "07d3052d5828e44a",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_opacity.md": {
+      "hash": "1113f23f386d54be",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_position.md": {
+      "hash": "1e20e3c5dfe67077",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_position_animate.md": {
+      "hash": "8c9ff6c7947a17d0",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_region.md": {
+      "hash": "97f770e8fa4d0276",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_region_animate.md": {
+      "hash": "594ac9bd97f848ba",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_render_during_drag.md": {
+      "hash": "bc7a69330b6efadd",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_render_interval.md": {
+      "hash": "ae3e2b0de457889c",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_shape_ellipse.md": {
+      "hash": "bf7287eea7d8c33d",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_shape_from_bitmap.md": {
+      "hash": "b0bf604f136ca8ad",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_shape_roundrect.md": {
+      "hash": "75fc04dd484fa24c",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_size.md": {
+      "hash": "4bfacf9c00b391cc",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_size_animate.md": {
+      "hash": "9a8cbdfc4f95999c",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_source_region.md": {
+      "hash": "3e0d838c5125916a",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_src_anim_mode.md": {
+      "hash": "2843ec4d397e2609",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_stretch_mode.md": {
+      "hash": "15becb71f063ebef",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_title.md": {
+      "hash": "ca4bab9e71b8a371",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_titlebar.md": {
+      "hash": "3760d6de350eaa2d",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_topmost.md": {
+      "hash": "d40d64216fa55161",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_set_transparent_color.md": {
+      "hash": "a3ed3fa55475d5ae",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_show.md": {
+      "hash": "c195e1a428522835",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_show_original.md": {
+      "hash": "b1ce039d9bcd4ee7",
+      "synced": "2026-11-12"
+    },
+    "winsplit/qiumingdll_winsplit_stop_animation.md": {
+      "hash": "d27e4bb7af66ef98",
+      "synced": "2026-11-12"
+    }
+  },
+  "generated": "2026-11-11T17:05:01Z"
+}

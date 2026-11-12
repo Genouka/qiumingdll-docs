@@ -1,4 +1,5 @@
 - [首页](/README)
+- <a data-native-link href="en/">English（可能滞后）</a>
 - 模块文档
   - [system](/system/)
     - [qiumingdll_disable_system_menu](/system/qiumingdll_disable_system_menu.md)
